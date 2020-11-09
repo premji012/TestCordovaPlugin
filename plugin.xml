@@ -14,9 +14,10 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Log" >
                 <param name="android-package" value="org.apache.cordova.log.Log"/>
+                <param name="onload" value="true" />
             </feature>
         </config-file>
 
-        <source-file src="src/android/Log.kt" target-dir="src/org/apache/cordova/log" />
+        <source-file src="src/android/Log.java" target-dir="src/org/apache/cordova/log" />
     </platform>
 </plugin>
