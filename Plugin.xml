@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-log" version="1.0.0">
+    <name>Log</name>
+    <description>Cordova Log Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,Log</keywords>
+    <js-module src="www/TestPugin.js" name="log">
+        <clobbers target="log" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Log" >
+                <param name="android-package" value="org.apache.cordova.log.Log"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Log.kt" target-dir="src/org/apache/cordova/log" />
+    </platform>
+</plugin>
