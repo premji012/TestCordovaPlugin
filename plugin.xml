@@ -5,7 +5,7 @@
     <description>Cordova Log Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,Log</keywords>
-    <js-module src="www/TestPugin.js" name="log">
+    <js-module src="www/TestPlugin.js" name="log">
         <clobbers target="log" />
     </js-module>
 
