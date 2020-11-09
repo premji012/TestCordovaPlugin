@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-log",
+  "version": "1.0.0",
+  "description": "An Android Cordova plugin that allows users to log messages.",
+  "cordova": {
+    "id": "cordova-plugin-log",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premji012/TestCordovaPlugin.git"
+  },
+  "keywords": [
+    "Log",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Prem Kumar <premji012@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/premji012/TestCordovaPlugin/issues"
+  },
+  "homepage": "https://github.com/premji012/TestCordovaPlugin"
+}
