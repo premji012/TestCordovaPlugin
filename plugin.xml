@@ -18,6 +18,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/AndroidLog.kt" target-dir="src/org/apache/cordova/log/" />
+        <source-file src="src/android/AndroidLog.kt" target-dir="java/org/apache/cordova/log/" />
     </platform>
 </plugin>
