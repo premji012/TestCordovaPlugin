@@ -16,9 +16,12 @@
                 <param name="android-package" value="org.apache.cordova.log.AndroidLog"/>
                 <param name="onload" value="true" />
             </feature>
-            <activity android:label="MultiViewActivity" android:name="org.apache.cordova.log.MultiViewActivity"/>
+            
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:label="MultiViewActivity" android:name="org.apache.cordova.log.MultiViewActivity"/>
+        </config-file>
         <source-file src="src/android/AndroidLog.kt" target-dir="java/org/apache/cordova/log/" />
     </platform>
 </plugin>
