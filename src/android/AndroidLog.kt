@@ -33,7 +33,7 @@ class AndroidLog : CordovaPlugin() {
 
     private fun loadModule(message: String?, callbackContext: CallbackContext) {
         if (message != null && message.length > 0) {
-            val activity = cordova.activity as MainActivity
+            val activity = cordova.activity as CordovaActivity
             val intent = Intent(activity, MultiViewActivity::class.java).apply {
                 putExtra("url", "file:///android_asset/www/test.html")
             }
