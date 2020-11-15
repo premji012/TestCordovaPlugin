@@ -16,15 +16,14 @@
                 <param name="android-package" value="org.apache.cordova.log.AndroidLog"/>
                 <param name="onload" value="true" />
             </feature>
-            
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:label="MultiViewActivity" android:name="org.apache.cordova.log.MultiViewActivity"/>
-        </config-file>
-        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="overwrite">
-            <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:theme="@android:style/Theme.DeviceDefault.NoActionBar" android:windowSoftInputMode="adjustResize" />
+        <source-file src="src/android/MultiViewActivity.kt" target-dir="java/org/apache/cordova/log/" />
+
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="merge">
+            <activity android:name="org.apache.cordova.log.MultiViewActivity" />
         </edit-config>
+
         <source-file src="src/android/AndroidLog.kt" target-dir="java/org/apache/cordova/log/" />
     </platform>
 </plugin>
