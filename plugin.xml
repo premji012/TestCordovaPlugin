@@ -18,9 +18,9 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/MultiViewActivity.kt" target-dir="java/org/apache/cordova/log/" />
+        <source-file src="src/android/MultiViewActivity.java" target-dir="src/org/apache/cordova/log/" />
 
-        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="merge">
+        <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
             <activity android:name="org.apache.cordova.log.MultiViewActivity" />
         </edit-config>
 
